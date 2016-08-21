@@ -1,3 +1,4 @@
+
 require './test_helper'
 # In this problem we are going to make a calculator.
 
@@ -45,13 +46,16 @@ class TestCalculator < MiniTest::Test
   # If you feel you're up for the challenge, fill in the missing code in the tests below,
   # based off the descriptions, and get them to pass.
   def test_multiplies_two_numbers
+    assert_equal 35, multiplie(5,7)
   end
 
   def test_multiplies_several_numbers
+    assert_equal 240, multiplies([2,4,5,6])
   end
 
 # http://en.wikipedia.org/wiki/Factorial
   def test_computes_factorial_0
+  assert_equal 1, factorial(0)
   end
 
   def test_computes_factorial_1
