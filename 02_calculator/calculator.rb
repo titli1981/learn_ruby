@@ -28,3 +28,7 @@ def multiplies(num)
   num.map { |i| mults*=i }
   return mults
 end
+
+def factorial(n)
+  (1..n).inject(1) {|product,n| product*n}
+end
