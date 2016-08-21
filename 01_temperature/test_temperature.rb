@@ -38,7 +38,7 @@ class TestTemperature < MiniTest::Test
 
   def test_ctof_converts_arbitrary_temperature
     assert_equal 68, ctof(20)
-  end
+  end  
 
 end
 
